@@ -4,8 +4,8 @@ from bs4 import BeautifulSoup
 import urllib
 
 url = "https://theportalwiki.com/wiki/GLaDOS_voice_lines_(Portal)"
-if not os.path.exists("files"):
-    os.makedirs("files")
+if not os.path.exists("audio_files"):
+    os.makedirs("audio_files")
 
 response = requests.get(url)
 if response.status_code != 200:
